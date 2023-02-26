@@ -11,7 +11,9 @@ router.get('/alle-scooter' , scooterController.listAllscooters);
 
 router.get('/buchung' , scooterController.buchung);
 
+router.get('/signUp', scooterController.signUp, scooterController.logIn);
 
+router.get('/logIn', scooterController.logIn);
 
 
 module.exports = router;

@@ -10,11 +10,14 @@ exports.buchung = (req, res) => {
     res.render('Buchung', { title: 'Scoote los!'});
 }
 
-exports.signUp =(req , res) => {
+exports.signUp =(req , res, next) => {
     //validate user info
+    console.log('sign up middleware')
+    next()
 }
 
 exports.logIn = (req, res) => {
     //login
+    console.log('login middleware')
 }
 
