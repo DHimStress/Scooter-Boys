@@ -18,6 +18,6 @@ exports.signUp =(req , res, next) => {
 
 exports.logIn = (req, res) => {
     //login
-    console.log('login middleware')
+    //console.log('login middleware')
 }
 
