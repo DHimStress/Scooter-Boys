@@ -14,7 +14,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 //Verbinden mit Mongoose
-mongoose.connect('mongodb+srv://Scooter-Admin:<B0RN4P1fUMUxFZSL>@scooterboys.uporrzq.mongodb.net/?retryWrites=true&w=majority');
+mongoose.set("strictQuery", false);
+mongoose.connect('mongodb://Scooter-Admin:B0RN4P1fUMUxFZSL@ac-g6myqfj-shard-00-00.uporrzq.mongodb.net:27017,ac-g6myqfj-shard-00-01.uporrzq.mongodb.net:27017,ac-g6myqfj-shard-00-02.uporrzq.mongodb.net:27017/?ssl=true&replicaSet=atlas-k8j5hk-shard-0&authSource=admin&retryWrites=true&w=majority');
 mongoose.Promise = global.Promise;
 mongoose.connection.on('error', (error) => console.error(error.message));
 

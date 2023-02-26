@@ -15,5 +15,9 @@ router.get('/signUp', scooterController.signUp, scooterController.logIn);
 
 router.get('/logIn', scooterController.logIn);
 
+//Admin Routes:
+router.get('/admin', scooterController.adminPage);
+
+router.get('/admin/add', scooterController.createScooterGet);
 
 module.exports = router;

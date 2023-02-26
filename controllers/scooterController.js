@@ -12,12 +12,21 @@ exports.buchung = (req, res) => {
 
 exports.signUp =(req , res, next) => {
     //validate user info
-    console.log('sign up middleware')
+    //console.log('sign up middleware')
     //next()
 }
 
 exports.logIn = (req, res) => {
     //login
-    console.log('login middleware')
+    //console.log('login middleware')
 }
+
+exports.adminPage = (req, res) => {
+    res.render('admin',  {title:'Admin'} );
+}
+
+exports.createScooterGet = (req, res) => {
+    res.render('add_scooter',  {title:'Neues Fahrzeug hinzufügen'} );
+}
+
 
