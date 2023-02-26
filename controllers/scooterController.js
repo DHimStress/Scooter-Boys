@@ -13,11 +13,11 @@ exports.buchung = (req, res) => {
 exports.signUp =(req , res, next) => {
     //validate user info
     console.log('sign up middleware')
-    next()
+    //next()
 }
 
 exports.logIn = (req, res) => {
     //login
-    //console.log('login middleware')
+    console.log('login middleware')
 }
 
