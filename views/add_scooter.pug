@@ -8,4 +8,25 @@ block content
     form(action="" method="POST")
         .form_imput 
             label(for="scooter_name") Scooter 
-            input(type="text" name="scooter_name") 
+            input(type="text" name="scooter_name" required) 
+        .form_imput 
+            label(for="scooter_standort") Standort 
+            input(type="text" name="scooter_standort" id="scooter_standort" required)
+        .form_imput 
+            label(for="image") Bild vom Scooter
+            input(type="file" name="image" id="image" )
+        .form_imput 
+            label(for="scooter_kfz") Kennzeichen/Rahmennummer:
+            input(type="text" name="scooter_kfz" id="scooter_kfz" required)
+        .form_imput 
+            label(for="kostenprokm") Preis pro km (cent):
+            input(type="number" name="kostenprokm" id="kostenprokm" required)
+        .form_imput 
+            label(for="verfügbar") Verfügbar:
+            input(type="radio" name="verfügbar" id="verfügbar" value="true" checked)
+        .form_imput 
+            label(for="nichtverfügbar") Nicht Verfügbar:
+            input(type="radio" name="verfügbar" id="nichtverfügbar" value="false" )
+        .form_imput
+            button(type="submit", class="button_small" ) Bestätigen
+            

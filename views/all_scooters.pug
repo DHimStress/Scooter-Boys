@@ -2,10 +2,11 @@ extends layout
 include mixing/_scooter
 
 block content 
+    h2=title 
+    each scooter in allScooters
+        .scooter_wrapper 
+            +scooter(scooter)
+
     
-    .scooter_wrapper 
-        +scooter
-
-
             
 

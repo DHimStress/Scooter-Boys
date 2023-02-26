@@ -1,14 +1,13 @@
-mixin scooter 
+mixin scooter(scooter)
 
     .scooter 
         .scooter_img
             a(href='') 
               img(src="/images/Scooter/Roller_und_Fahrrad.jpg")
         .scooter_info 
-            a(href='') 
-              h3 Scooter 1
+            a(href='/alle-scooter/' + scooter._id) 
+              h3 = scooter.scooter_name
             hr
-
             p Preisklasse : 5
             p sf1 
             p sf2 
