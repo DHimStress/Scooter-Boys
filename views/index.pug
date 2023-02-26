@@ -1,0 +1,329 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap', rel='stylesheet')
+    title Scooter Boy -  Startseite
+  body
+    header.header
+      .logo
+        a(href='/')
+          img.logo(src='images/logo.png', alt='Logo')
+      nav
+        ul.nav_links
+          li
+            a(href='#') Tutorial
+          li
+            a(href='#') Partner
+          li
+            a(href='#') Kosten &amp; Preise
+      button.login_button Anmelden
+      //ein link zum button!!!!!
+       
+    style.
+      .header {
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      display: flex;
+      position: fixed;
+      padding: 15px 20px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255);
+      }
+      .login_button{
+      background-color: #31ceeb;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 4px 2px;
+      cursor: pointer;
+      }
+      .header .logo img {
+      width: 30%
+      }
+      .header .nav_links {
+      margin: 0;
+      padding: 0;
+      }
+      .header .nav_links > li {
+      display: inline-block;
+      }
+      .header .nav_links > li:not(:last-child) {
+      margin: 0 42px 0 0;
+      }
+      .header .nav_links > li > a {
+      color: #000000;
+      font-size: 20px;
+      }
+    // Ab hier der Body
+    .middle
+      // Slideshow mit Slogans
+      .image-container1
+        img.body-image(src='images/crocs.jpg', style='max-width:100%; height:auto;')
+        .text Willkommen bei Scooter Boy!
+        img.body-image(src='images/roller_schatten.jpg', style='max-width:100%; height:auto;')
+        .text Lasst uns unsere St&auml;dte neu gestalten!
+        img.body-image(src='images/Typ_mit_roller.jpg', style='max-width:100%; height:auto;')
+        .text Die smarte Art sich in der Stadt zu bewegen!
+        img.body-image(src='images/Roller_und_Fahrrad.jpg')
+        .text
+          | Fahre am Verkehr vorbei und reduziere deine CO2-Emissionen - eine Fahrt nach der anderen.
+    // Facts und Infos
+    h1.h1
+      | FACTS ABOUT SCOOTER BOY
+    .Facts
+      .box
+        img.pic(src='images/smartphone.png', style='max-width:100%; height:auto;')
+        b
+          p(style='text-align:center')
+            | GANZ BEQUEM MIT 
+            br
+            |  DEINEM SMARTPHONE
+        p(style='text-align:center')
+          | Miete dir ganze einfach einen Roller
+          br
+          |  &uuml;ber unsere App!
+      .box
+        img.pic(src='images/stadt.png', style='max-width:100%; height:auto;')
+        b
+          p(style='text-align:center')
+            | WIR KOLLABORIEREN 
+            br
+            |  MIT ST&Auml;DTEN
+        p(style='text-align:center')
+          | Offizieller Partner der St&auml;dte Mannheim 
+          br
+          |  und Erlangen!
+      .box
+        img.pic(src='images/co2-fussabdruck.png', style='max-width:100%; height:auto;')
+        b
+          p(style='text-align:center')
+            | UMWELTBEWUSST
+        p(style='text-align:center')
+          | Verringere deinen co2-Fu&szlig;abdruck
+          br
+          |  mit einer Fahrt auf einem 
+          br
+          |  vollelektrischen Roller!
+    // Map
+    h1.h1
+      | WHERE YOU FIND YOUR SCOOTER BOY
+    .map-container
+      .map2
+        iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.5645123613062!2d8.529934231749792!3d49.4738426990959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cf2383b0c65d%3A0x1105b8c90448a69d!2sDHBW%20Mannheim!5e0!3m2!1sde!2sde!4v1677077418459!5m2!1sde!2sde', allowfullscreen='', loading='lazy', referrerpolicy='no-referrer-when-downgrade')
+        b
+          p(style='text-align:center') Mannheim
+      .map2
+        iframe.map(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10344.968571035775!2d11.0039318!3d49.593183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1f8dea27cfe65%3A0x7e89c43c04091f10!2sErlangen%20Arcaden!5e0!3m2!1sde!2sde!4v1677284693260!5m2!1sde!2sde', allowfullscreen='', loading='lazy', referrerpolicy='no-referrer-when-downgrade')
+        b
+          p(style='text-align:center') Erlangen
+    style.
+      .h1{
+      text-align: center;
+      font-size: 63px;
+      }
+      .b{
+      font-weight: bold;
+      }
+      .body-image {
+      display: none;
+      }
+      .logo-head {
+      width: 200px;
+      }
+      .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      border-radius: 18px;
+      }
+      .middle {
+      display: flex;
+      justify-content: center;
+      }
+      body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #31ceeb;
+      }
+      .body-image {
+      width: 100%;
+      display: block;
+      margin: 0;
+      left: 0;
+      right: 0;
+      }
+      .body {
+      color: rgb(255, 255, 255);
+      }
+      .image-container1 {
+      margin-top: 200px;
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      position: relative;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      min-height: 100%;
+      margin: 0;
+      left: 0;
+      right: 0;
+      }
+      .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 64px;
+      font-weight: bold;
+      }
+      a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: bold;
+      align-items:center;
+      }
+      a:hover {
+      text-decoration: underline;
+      }
+      .Facts {
+      margin-top: 16px;
+      background-color: rgb(255, 255, 255);
+      padding: 16px;
+      margin: 0px;
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      .box{
+      padding: 16px;
+      background-color: rgb(226, 226, 226);
+      margin-right: 30px;
+      margin-left: 30px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      border-radius: 25px;;
+      }
+      .map-container {
+      margin-top: 16px;
+      background-color: rgb(255, 255, 255);
+      padding: 16px;
+      margin: 0px;
+      margin-top: 16px;
+      display:flex;
+      justify-content: center;
+      }
+      .map {
+      width: 600px;
+      height: 600px;
+      align-items:center;
+      border: 0;
+      margin-right: 30px;
+      margin-left: 30px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      }
+    // Ab hier der footer
+    footer.footer
+      nav
+        ul.nav_footer
+          li
+            a(href='#') Fahrzeuge
+          li
+            a(href='#') Kontakt
+          li
+            a(href='#') About us
+    style.
+      .footer {
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      display: flex;
+      margin-top: 16px;
+      padding: 15px 20px;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255);
+      width: 100%;
+      }
+      .footer .nav_footer {
+      margin: 0;
+      padding: 0;
+      }
+      .footer .nav_footer > li {
+      display: inline-block;
+      }
+      .footer .nav_footer > li:not(:last-child) {
+      margin: 0 42px 0 0;
+      }
+      .footer .nav_footer > li > a {
+      color: #000000;
+      font-size: 20px;
+      }
+    a(href='#')
+      p(style='text-align:center') Impressum
+    br
+    .social_media
+      .social
+        img(src='images/linkedin-logo.png', width='64', height='64')
+      .social
+        img(src='images/facebook.png', width='64', height='64')
+      .social
+        img(src='images/instagram.png', width='64', height='64')
+    style.
+      .social_media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      }
+      .social {
+      position: relative;
+      display: inline-block;
+      padding: 10px;
+      }
+      .b:hover{
+      text-decoration: underline;
+      }
+    // Funktionen für Slideshow
+    script.
+      var slideIndex = 0;
+      carousel();
+      function carousel() {
+      var i;
+      var x = document.getElementsByClassName("body-image");
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) { slideIndex = 1 }
+      x[slideIndex - 1].style.display = "block";
+      setTimeout(carousel, 9000); // Change image every 5 seconds
+      }
+      var slideIndex1 = 0;
+      carousel1();
+      function carousel1() {
+      var i;
+      var x = document.getElementsByClassName("text");
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      slideIndex1++;
+      if (slideIndex1 > x.length) { slideIndex1 = 1 }
+      x[slideIndex1 - 1].style.display = "block";
+      setTimeout(carousel1, 9000); // Change image every 5 seconds
+      }

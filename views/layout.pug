@@ -1,0 +1,89 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap', rel='stylesheet')
+    title Startseite
+  body
+    header.header
+      .logo
+        a(href='/')
+          img#logo(src='images/logo.png', alt='Logo')
+      //nav
+        ul.nav_links
+          li
+            a(href='#') Tutorial
+          li
+            a(href='#') Partner
+          li
+            a(href='#') Kosten &amp; Preise
+      form.login_button(action='/sign-up')
+        input(type='button', value='Registrieren')
+      form.login_button(action='/login')
+        input(type='button', value='Login')
+
+    header.form
+      .search_nav 
+        form
+          .input_wrapper 
+            label(for="sf1") sf1
+            input(type="text" id="sf1" name="sf1" required)
+          .input_wrapper 
+            label(for="sf2") sf2
+            input(type="text" id="sf2" name="sf2" required)
+          .input_wrapper sf3
+            label(for="sf3")
+            input(type="text" id="sf3" name="sf3" required)
+
+          .input_wrapper 
+            select(name="wählbar") 
+              option(value="1") Minimum 1
+              option(value="2") Minimum 2
+          
+          .input_wrapper 
+            select(name="Sortieren")
+              option(value="1") Preis : Niedrig - Hoch 
+              option(value="2") Preis : Hoch - Niedrig 
+
+          .input_wrapper 
+            button(type="submit") Suchen 
+
+
+    style.
+      .header {
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      display: flex;
+      position: fixed;
+      padding: 15px 20px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255);
+      }
+      .header .logo img {
+      width: 30%
+      }
+      .header .nav_links {
+      margin: 0;
+      padding: 0;
+      }
+      .header .nav_links > li {
+      display: inline-block;
+      }
+      .header .nav_links > li:not(:last-child) {
+      margin: 0 42px 0 0;
+      }
+      .header .nav_links > li > a {
+      color: #000000;
+      font-size: 20px;
+      }
+  body
+    block content
